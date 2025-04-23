@@ -7,5 +7,6 @@ def generate_fake_identity():
         "name": fake.name(),
         "email": fake.email(),
         "phone": fake.phone_number(),
-        "address": fake.address()
+        "address": fake.address(),
+        "username": fake.user_name()
     }
