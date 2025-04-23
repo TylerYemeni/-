@@ -1,7 +1,7 @@
 from gtts import gTTS
-import os
 
-def generate_fake_voice(text, filename="output.mp3"):
+def generate_voice(identity, filename="voice.mp3"):
+    text = f"مرحباً، اسمي {identity['name']}. أود الإبلاغ عن رقم مزعج."
     tts = gTTS(text=text, lang='ar')
     tts.save(filename)
-    print(f"[Voice] تم توليد الصوت وحفظه في {filename}")
+    return filename
